@@ -396,3 +396,63 @@ class DemoPageSix extends StatelessWidget {
 
 This file basically has more than one widgets and same animation is applied to all widgets like two
 text widgets and one image widget here in this case.
+
+10. `callback_effect_page.dart` uses .callback function at the end of animations extension:
+
+```dart 
+              const Text("Hello")
+                  .animate()
+                  .scale(delay: 200.ms, duration: 400.ms)
+                  .callback(
+                callback: (_) => debugPrint('scale is done'),
+```
+
+11. `swap_effect_page.dart` uses .swap to swap widgets with builder:
+
+```dart 
+const Text("Before").animate().swap(
+            duration: 900.ms,
+            builder: (_, __) => const Text("After"),
+```
+
+12. `custom_effect_page.dart` uses .custom for custom animations with builder.
+
+```dart 
+
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text("Hello World").animate().custom(
+                duration: 1000.ms,
+                builder: (context, value, child) =>
+                    Container(
+                      color: Color.lerp(Colors.red, Colors.blue, value),
+                      padding: const EdgeInsets.all(8),
+                      child: child,
+                    ),
+              ),
+              Animate()
+                  .custom(
+                duration: 10.seconds,
+                begin: 10,
+                end: 0,
+                builder: (_, value, __) =>
+                    Text(
+                      value.round().toString(),
+                    ),
+              )
+                  .fadeOut(),
+            ],
+          ),
+        ),
+```
+
+13. `toggle_effect_page.dart` uses .toggle with builder.
+
+```dart 
+          Animate().toggle(
+            duration: 5.seconds,
+            builder: (_, value, __) => Text(value ? "Before" : "After"),
+          ),
+```

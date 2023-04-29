@@ -17,24 +17,20 @@ class DemoPageOne extends StatelessWidget {
             children: [
               // First two children have same output animation
               // 1st => Wrap widget
-              // Animate(
-              //   effects: [
-              //     const FadeEffect(),
-              //     const SlideEffect(),
-              //     ShakeEffect(duration: 1000.ms),
-              //   ],
-              //   child: const Text('Both have same output'),
-              // ),
-              // // 2nd => Extension method
-              // const Text('Both have same output')
-              //     .animate()
-              //     .fade()
-              //     .slide()
-              //     .shake(duration: 1000.ms),
-              Text("Hello").animate()
-                  .fadeIn(duration: 600.ms)
-                  .then(delay: 200.ms) // baseline=800ms
-                  .scaleXY(end: 2)
+              Animate(
+                effects: [
+                  const FadeEffect(),
+                  const SlideEffect(),
+                  ShakeEffect(duration: 1000.ms),
+                ],
+                child: const Text('Both have same output'),
+              ),
+              // 2nd => Extension method
+              const Text('Both have same output')
+                  .animate()
+                  .fade()
+                  .slide()
+                  .shake(duration: 1000.ms),
             ],
           ),
         ),

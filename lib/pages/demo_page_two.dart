@@ -15,7 +15,7 @@ class DemoPageTwo extends StatelessWidget {
           child: const Text('Demo Page Two')
               .animate()
               .then()
-              .fade(delay: 500.ms, duration: 2000.ms, begin: .1, end: .8)
+              .fade(delay: 500.ms, duration: 900.ms, begin: .1, end: .8)
               .then()
               .scale()
               .then()
@@ -23,7 +23,7 @@ class DemoPageTwo extends StatelessWidget {
               .then()
               .tint(color: Colors.amber)
               .then()
-              .shake(duration: 1000.ms),
+              .shake(duration: 300.ms),
         ),
       );
 }

@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            minimumSize: const Size(250, 60),
-            textStyle: const TextStyle(fontSize: 30),
+            minimumSize: const Size(250, 50),
+            textStyle: const TextStyle(fontSize: 25),
           ),
         ),
       ),

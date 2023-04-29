@@ -6,6 +6,10 @@ import '/pages/demo_page_three.dart';
 import '/pages/demo_page_four.dart';
 import '/pages/demo_page_five.dart';
 import '/pages/demo_page_six.dart';
+import '/pages/callback_effect_page.dart';
+import '/pages/custom_effect_page.dart';
+import '/pages/swap_effect_page.dart';
+import '/pages/toggle_effect_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.title});
@@ -30,7 +34,7 @@ class HomePage extends StatelessWidget {
                 ),
                 child: const Text('Demo Page One'),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
@@ -40,7 +44,7 @@ class HomePage extends StatelessWidget {
                 ),
                 child: const Text('Demo Page Two'),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
@@ -50,7 +54,7 @@ class HomePage extends StatelessWidget {
                 ),
                 child: const Text('Demo Page Three'),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
@@ -60,7 +64,7 @@ class HomePage extends StatelessWidget {
                 ),
                 child: const Text('Demo Page Four'),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
@@ -70,7 +74,7 @@ class HomePage extends StatelessWidget {
                 ),
                 child: const Text('Demo Page Five'),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
@@ -79,6 +83,46 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 child: const Text('Demo Page Six'),
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const CallbackEffectPage(title: 'Callback Effect Page'),
+                  ),
+                ),
+                child: const Text('Callback Effect Page'),
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const ToggleEffectPage(title: 'Toggle Effect Page'),
+                  ),
+                ),
+                child: const Text('Toggle Effect Page'),
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const CustomEffectPage(title: 'Custom Effect Page'),
+                  ),
+                ),
+                child: const Text('Custom Effect Page'),
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        const SwapEffectPage(title: 'Swap Effect Page'),
+                  ),
+                ),
+                child: const Text('Swap Effect Page'),
               ),
             ],
           ),
