@@ -15,11 +15,11 @@ class CallbackEffectPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text("Hello").animate().fadeIn(duration: 600.ms).callback(
+              const Text('Hello').animate().fadeIn(duration: 600.ms).callback(
                     duration: 300.ms,
-                    callback: (_) => debugPrint('halfway'),
+                    callback: (value) => debugPrint('halfway'),
                   ),
-              const Text("Hello")
+              const Text('Hello')
                   .animate()
                   .scale(delay: 200.ms, duration: 400.ms)
                   .callback(
