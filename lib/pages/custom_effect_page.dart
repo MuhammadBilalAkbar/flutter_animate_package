@@ -15,7 +15,7 @@ class CustomEffectPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text("Hello World").animate().custom(
+              const Text('Hello World').animate().custom(
                     duration: 1000.ms,
                     builder: (_, value, child) => Container(
                       color: Color.lerp(Colors.red, Colors.blue, value),

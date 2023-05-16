@@ -14,7 +14,7 @@ class ToggleEffectPage extends StatelessWidget {
         body: Center(
           child: Animate().toggle(
             duration: 5.seconds,
-            builder: (_, value, __) => Text(value ? "Before" : "After"),
+            builder: (_, value, __) => Text(value ? 'Before' : 'After'),
           ),
         ),
       );
