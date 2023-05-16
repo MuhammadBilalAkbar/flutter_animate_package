@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageSix extends StatelessWidget {
-  const DemoPageSix({super.key, required this.title});
+class AnimationPageSix extends StatelessWidget {
+  const AnimationPageSix({super.key, required this.title});
 
   final String title;
 

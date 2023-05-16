@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageFour extends StatelessWidget {
-  const DemoPageFour({super.key, required this.title});
+class AnimationPageFour extends StatelessWidget {
+  const AnimationPageFour({super.key, required this.title});
 
   final String title;
 
@@ -33,7 +33,7 @@ class DemoPageFour extends StatelessWidget {
                   .tint(color: Colors.red, end: 0.6)
                   .elevation(end: 20),
               const SizedBox(height: 20),
-              const Text('Horrible Pulsing Text')
+              const Text("Horrible Pulsing Text")
                   .animate(
                       onPlay: (controller) => controller.repeat(reverse: true))
                   .fadeOut(curve: Curves.easeInOut),
