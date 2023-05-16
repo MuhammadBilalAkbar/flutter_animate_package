@@ -373,7 +373,7 @@ class AnimationPageSix extends StatelessWidget {
         appBar: AppBar(
           title: Text(title),
         ),
-        body: Column(
+        body: Column( 
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Animation Page Seven'),
