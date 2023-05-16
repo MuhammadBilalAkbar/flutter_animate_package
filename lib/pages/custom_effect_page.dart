@@ -17,7 +17,7 @@ class CustomEffectPage extends StatelessWidget {
             children: [
               const Text('Hello World').animate().custom(
                     duration: 1000.ms,
-                    builder: (context, value, child) => Container(
+                    builder: (_, value, child) => Container(
                       color: Color.lerp(Colors.red, Colors.blue, value),
                       padding: const EdgeInsets.all(8),
                       child: child,
@@ -28,7 +28,7 @@ class CustomEffectPage extends StatelessWidget {
                     duration: 10.seconds,
                     begin: 10,
                     end: 0,
-                    builder: (context, value, widget) => Text(
+                    builder: (_, value, __) => Text(
                       value.round().toString(),
                     ),
                   )

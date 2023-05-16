@@ -14,7 +14,7 @@ class SwapEffectPage extends StatelessWidget {
         body: Center(
           child: const Text('Before').animate().swap(
                 duration: 900.ms,
-                builder: (context, widget) => const Text('After'),
+                builder: (_, __) => const Text('After'),
               ),
         ),
       );

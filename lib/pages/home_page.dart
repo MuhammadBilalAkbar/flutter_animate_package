@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '/pages/demo_page_one.dart';
-import '/pages/demo_page_two.dart';
-import '/pages/demo_page_three.dart';
-import '/pages/demo_page_four.dart';
-import '/pages/demo_page_five.dart';
-import '/pages/demo_page_six.dart';
+import '/pages/animation_page_one.dart';
+import '/pages/animation_page_two.dart';
+import '/pages/animation_page_three.dart';
+import '/pages/animation_page_four.dart';
+import '/pages/animation_page_five.dart';
+import '/pages/animation_page_six.dart';
 import '/pages/callback_effect_page.dart';
 import '/pages/custom_effect_page.dart';
 import '/pages/swap_effect_page.dart';
@@ -29,60 +29,60 @@ class HomePage extends StatelessWidget {
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const DemoPageOne(title: 'Demo Page One'),
+                        const AnimationPageOne(title: 'Animation Page One'),
                   ),
                 ),
-                child: const Text('Demo Page One'),
+                child: const Text('Animation Page One'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const DemoPageTwo(title: 'Demo Page Two'),
+                        const AnimationPageTwo(title: 'Animation Page Two'),
                   ),
                 ),
-                child: const Text('Demo Page Two'),
+                child: const Text('Animation Page Two'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const DemoPageThree(title: 'Demo Page Three'),
+                        const AnimationPageThree(title: 'Animation Page Three'),
                   ),
                 ),
-                child: const Text('Demo Page Three'),
+                child: const Text('Animation Page Three'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const DemoPageFour(title: 'Demo Page Four'),
+                        const AnimationPageFour(title: 'Animation Page Four'),
                   ),
                 ),
-                child: const Text('Demo Page Four'),
+                child: const Text('Animation Page Four'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const DemoPageFive(title: 'Demo Page Five'),
+                        const AnimationPageFive(title: 'Animation Page Five'),
                   ),
                 ),
-                child: const Text('Demo Page Five'),
+                child: const Text('Animation Page Five'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const DemoPageSix(title: 'Demo Page Six'),
+                        const AnimationPageSix(title: 'Animation Page Six'),
                   ),
                 ),
-                child: const Text('Demo Page Six'),
+                child: const Text('Animation Page Six'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(

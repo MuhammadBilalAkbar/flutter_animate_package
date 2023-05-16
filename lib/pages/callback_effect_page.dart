@@ -17,13 +17,13 @@ class CallbackEffectPage extends StatelessWidget {
             children: [
               const Text('Hello').animate().fadeIn(duration: 600.ms).callback(
                     duration: 300.ms,
-                    callback: (value) => debugPrint('halfway'),
+                    callback: (_) => debugPrint('halfway'),
                   ),
               const Text('Hello')
                   .animate()
                   .scale(delay: 200.ms, duration: 400.ms)
                   .callback(
-                    callback: (value) => debugPrint('scale is done'),
+                    callback: (_) => debugPrint('scale is done'),
                   ),
             ],
           ),

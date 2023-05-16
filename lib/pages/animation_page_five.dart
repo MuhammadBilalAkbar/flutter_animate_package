@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageFive extends StatefulWidget {
-  const DemoPageFive({super.key, required this.title});
+class AnimationPageFive extends StatefulWidget {
+  const AnimationPageFive({super.key, required this.title});
 
   final String title;
 
   @override
-  State<DemoPageFive> createState() => _DemoPageFiveState();
+  State<AnimationPageFive> createState() => _AnimationPageFiveState();
 }
 
-class _DemoPageFiveState extends State<DemoPageFive> {
+class _AnimationPageFiveState extends State<AnimationPageFive> {
   bool toggle = false;
 
   @override

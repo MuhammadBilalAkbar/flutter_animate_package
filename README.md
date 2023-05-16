@@ -126,7 +126,8 @@ samples, guidance on mobile development, and a full API reference.
    widget from `home_page.dart` file.
 3. In `home_page.dart`, there are six ElevatedButtons from basic to advance animations using
    flutter_animate package.
-4. `demo_page_one.dart` contains following code: If you hover over any extension it will show all
+4. `animation_page_one.dart` contains following code: If you hover over any extension it will show
+   all
    its details with its parameters.
 
     - tint is used to take it towards the new color given.
@@ -143,8 +144,8 @@ samples, guidance on mobile development, and a full API reference.
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageOne extends StatelessWidget {
-  const DemoPageOne({super.key, required this.title});
+class AnimationPageOne extends StatelessWidget {
+  const AnimationPageOne({super.key, required this.title});
 
   final String title;
 
@@ -188,14 +189,14 @@ I recommend the 2nd method which is extension because it is very handy.
 
 Both have same output animation. They uses fade, slide and shake effect for animation.
 
-5. `demo_page_two.dart` contains following code:
+5. `animation_page_two.dart` contains following code:
 
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageTwo extends StatelessWidget {
-  const DemoPageTwo({super.key, required this.title});
+class AnimationPageTwo extends StatelessWidget {
+  const AnimationPageTwo({super.key, required this.title});
 
   final String title;
 
@@ -206,7 +207,7 @@ class DemoPageTwo extends StatelessWidget {
           title: Text(title),
         ),
         body: Center(
-          child: const Text('Demo Page Two')
+          child: const Text('Animation Page Two')
               .animate()
               .then()
               .fade(delay: 500.ms, duration: 2000.ms, begin: .1, end: .8)
@@ -227,14 +228,14 @@ class DemoPageTwo extends StatelessWidget {
 Text widget first calls animate. `then()` effect is used for when the previous one is completed then
 it goes for the next animations. Here like fade, scale, slideY, tint and shake.
 
-6. `demo_page_three.dart` contains the following code:
+6. `animation_page_three.dart` contains the following code:
 
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageThree extends StatelessWidget {
-  const DemoPageThree({super.key, required this.title});
+class AnimationPageThree extends StatelessWidget {
+  const AnimationPageThree({super.key, required this.title});
 
   final String title;
 
@@ -245,7 +246,7 @@ class DemoPageThree extends StatelessWidget {
           title: Text(title),
         ),
         body: Center(
-          child: const Text('Demo Page Three')
+          child: const Text('Animation Page Three')
               .animate()
               .shimmer(delay: 400.ms, duration: 3000.ms)
               .shake(hz: 4, curve: Curves.easeInOutCubic)
@@ -262,14 +263,14 @@ When the text is shown, `shimmer` effect has delay of 400 milliseconds and durat
 milliseconds with `shake`, `scaleXY`, `then` with 600 millisecond delay and `scaleXY` again in the
 end.
 
-7. `demo_page_four.dart` contains following code:
+7. `animation_page_four.dart` contains following code:
 
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageFour extends StatelessWidget {
-  const DemoPageFour({super.key, required this.title});
+class AnimationPageFour extends StatelessWidget {
+  const AnimationPageFour({super.key, required this.title});
 
   final String title;
 
@@ -284,7 +285,7 @@ class DemoPageFour extends StatelessWidget {
             color: Colors.black87,
             padding: const EdgeInsets.all(16),
             child: const Text(
-              'Demo Page Four',
+              'Animation Page Four',
               style: TextStyle(color: Colors.white),
             ),
           )
@@ -310,23 +311,23 @@ can also be used but with no count.
 There are also `onInit`(AnimationController initialized) `onComplete`(animation finished) and
 properties of animate widget.
 
-8. `demo_page_five.dart` contains following code:
+8. `animation_page_five.dart` contains following code:
 
 ```dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageFive extends StatefulWidget {
-  const DemoPageFive({super.key, required this.title});
+class AnimationPageFive extends StatefulWidget {
+  const AnimationPageFive({super.key, required this.title});
 
   final String title;
 
   @override
-  State<DemoPageFive> createState() => _DemoPageFiveState();
+  State<AnimationPageFive> createState() => _AnimationPageFiveState();
 }
 
-class _DemoPageFiveState extends State<DemoPageFive> {
+class _AnimationPageFiveState extends State<AnimationPageFive> {
   bool toggle = false;
 
   @override
@@ -340,7 +341,7 @@ class _DemoPageFiveState extends State<DemoPageFive> {
             cursor: SystemMouseCursors.click,
             child: GestureDetector(
               onTap: () => setState(() => toggle = !toggle),
-              child: const Text('Demo Page Five. Click Me!')
+              child: const Text('Animation Page Five. Click Me!')
                   .animate(target: toggle ? 1 : 0)
                   .scaleXY(end: 2),
             ),
@@ -355,14 +356,14 @@ It uses toggle boolean variable and MouseRegion to click on text and change the 
 x-axis and y-axis. Scale is used to make the font size of text smaller and bigger according to the
 given values.
 
-9. `demo_page_six.dart` contains following code:
+9. `animation_page_six.dart` contains following code:
 
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-class DemoPageSix extends StatelessWidget {
-  const DemoPageSix({super.key, required this.title});
+class AnimationPageSix extends StatelessWidget {
+  const AnimationPageSix({super.key, required this.title});
 
   final String title;
 
@@ -375,7 +376,7 @@ class DemoPageSix extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Demo Page Seven'),
+            const Text('Animation Page Seven'),
             const SizedBox(height: 20),
             Image.asset(
               'img.png',
