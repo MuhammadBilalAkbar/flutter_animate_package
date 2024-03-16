@@ -7,23 +7,30 @@ class AnimationPageTwo extends StatelessWidget {
   final String title;
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          title: Text(title),
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // First two children have same output animation
+            // 1st => delay property of scale
+            const Text("Animation Page Two")
+                .animate()
+                .scale(duration: 1000.ms)
+                .blur(delay: 1000.ms),
+            // 1st => then effect
+            const Text("Animation Page Two")
+                .animate()
+                .scale(duration: 1000.ms)
+                .then()
+                .blur(),
+          ],
         ),
-        body: Center(
-          child: const Text('Demo Page Two')
-              .animate()
-              .then()
-              .fade(delay: 500.ms, duration: 900.ms, begin: .1, end: .8)
-              .then()
-              .scale()
-              .then()
-              .slideY(curve: Curves.easeIn, begin: 2, end: 5)
-              .then()
-              .tint(color: Colors.amber)
-              .then()
-              .shake(duration: 300.ms),
-        ),
-      );
+      ),
+    );
+  }
 }

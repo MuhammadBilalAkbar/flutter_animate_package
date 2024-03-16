@@ -4,8 +4,8 @@ import '/pages/animation_page_one.dart';
 import '/pages/animation_page_two.dart';
 import '/pages/animation_page_three.dart';
 import '/pages/animation_page_four.dart';
-import '/pages/animation_page_five.dart';
-import '/pages/animation_page_six.dart';
+// import '/pages/animation_page_five.dart';
+// import '/pages/animation_page_six.dart';
 import '/pages/callback_effect_page.dart';
 import '/pages/custom_effect_page.dart';
 import '/pages/swap_effect_page.dart';
@@ -69,26 +69,6 @@ class HomePage extends StatelessWidget {
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const AnimationPageFive(title: 'Animation Page Five'),
-                  ),
-                ),
-                child: const Text('Animation Page Five'),
-              ),
-              const SizedBox(height: 10),
-              ElevatedButton(
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        const AnimationPageSix(title: 'Animation Page Six'),
-                  ),
-                ),
-                child: const Text('Animation Page Six'),
-              ),
-              const SizedBox(height: 10),
-              ElevatedButton(
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) =>
                         const CallbackEffectPage(title: 'Callback Effect Page'),
                   ),
                 ),
@@ -109,20 +89,20 @@ class HomePage extends StatelessWidget {
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const CustomEffectPage(title: 'Custom Effect Page'),
+                        const SwapEffectPage(title: 'Swap Effect Page'),
                   ),
                 ),
-                child: const Text('Custom Effect Page'),
+                child: const Text('Swap Effect Page'),
               ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        const SwapEffectPage(title: 'Swap Effect Page'),
+                    const CustomEffectPage(title: 'Custom Effect Page'),
                   ),
                 ),
-                child: const Text('Swap Effect Page'),
+                child: const Text('Custom Effect Page'),
               ),
             ],
           ),

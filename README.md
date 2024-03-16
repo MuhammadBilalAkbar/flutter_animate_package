@@ -127,8 +127,7 @@ samples, guidance on mobile development, and a full API reference.
 3. In `home_page.dart`, there are six ElevatedButtons from basic to advance animations using
    flutter_animate package.
 4. `animation_page_one.dart` contains following code: If you hover over any extension it will show
-   all
-   its details with its parameters.
+   all its details with its parameters.
 
     - tint is used to take it towards the new color given.
 

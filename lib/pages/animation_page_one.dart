@@ -19,8 +19,7 @@ class AnimationPageOne extends StatelessWidget {
               // 1st => Wrap widget
               Animate(
                 effects: [
-                  const FadeEffect(),
-                  const SlideEffect(),
+                   ScaleEffect(duration: 1000.ms),
                   ShakeEffect(duration: 1000.ms),
                 ],
                 child: const Text('Both have same output'),
@@ -28,8 +27,7 @@ class AnimationPageOne extends StatelessWidget {
               // 2nd => Extension method
               const Text('Both have same output')
                   .animate()
-                  .fade()
-                  .slide()
+                  .scale(duration: 1000.ms)
                   .shake(duration: 1000.ms),
             ],
           ),

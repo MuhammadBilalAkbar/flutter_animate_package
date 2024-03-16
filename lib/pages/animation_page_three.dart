@@ -12,13 +12,32 @@ class AnimationPageThree extends StatelessWidget {
           title: Text(title),
         ),
         body: Center(
-          child: const Text('Demo Page Three')
+          child: const Text(
+            'Animation Page Three',
+            style: TextStyle(
+              fontSize: 80,
+              fontWeight: FontWeight.bold,
+            ),
+          )
               .animate()
-              .shimmer(delay: 400.ms, duration: 3000.ms)
-              .shake(hz: 4, curve: Curves.easeInOutCubic)
-              .scaleXY(end: 1.1, duration: 600.ms)
-              .then(delay: 600.ms)
-              .scaleXY(end: 1 / 1.1),
+              .scale(duration: 2000.ms)
+              .shake(hz: 10, delay: 2000.ms, duration: 1000.ms)
+              .shimmer(
+            delay: 3000.ms,
+            duration: 3000.ms,
+            colors: [
+              Colors.black,
+              Colors.yellow,
+              Colors.red,
+              Colors.green,
+              Colors.blue,
+              Colors.black,
+            ],
+          ).blur(
+            end: const Offset(20, 20),
+            delay: 6000.ms,
+            duration: 1000.ms,
+          ),
         ),
       );
 }

@@ -19,13 +19,13 @@ class AnimationPageFour extends StatelessWidget {
                 color: Colors.black87,
                 padding: const EdgeInsets.all(16),
                 child: const Text(
-                  'Demo Page Four',
+                  'Animation Page Four',
                   style: TextStyle(color: Colors.white),
                 ),
               )
                   .animate(
                     onPlay: (controller) => controller.loop(
-                      count: 10,
+                      count: 20,
                       reverse: true,
                     ),
                   )
@@ -35,7 +35,8 @@ class AnimationPageFour extends StatelessWidget {
               const SizedBox(height: 20),
               const Text('Horrible Pulsing Text')
                   .animate(
-                      onPlay: (controller) => controller.repeat(reverse: true))
+                    onPlay: (controller) => controller.repeat(reverse: true),
+                  )
                   .fadeOut(curve: Curves.easeInOut),
             ],
           ),
