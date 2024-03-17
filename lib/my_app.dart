@@ -14,13 +14,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Animate Package',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.blue,
         appBarTheme: const AppBarTheme(
           centerTitle: true,
+          backgroundColor: Colors.blue,
           titleTextStyle: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
           ),
+          iconTheme: IconThemeData(color: Colors.white),
         ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
@@ -30,8 +32,11 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            minimumSize: const Size(350, 60),
-            textStyle: const TextStyle(fontSize: 25.0),
+            minimumSize: const Size(350, 70),
+            textStyle:
+                const TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.blue,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(50),
             ),

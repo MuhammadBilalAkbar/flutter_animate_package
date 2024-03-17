@@ -19,7 +19,7 @@ class AnimationPageOne extends StatelessWidget {
               // 1st => Wrap widget
               Animate(
                 effects: [
-                   ScaleEffect(duration: 1000.ms),
+                  ScaleEffect(duration: 1000.ms),
                   ShakeEffect(duration: 1000.ms),
                 ],
                 child: const Text('Both have same output'),

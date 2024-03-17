@@ -33,11 +33,9 @@ class AnimationPageFour extends StatelessWidget {
                   .tint(color: Colors.red, end: 0.6)
                   .elevation(end: 20),
               const SizedBox(height: 20),
-              const Text('Horrible Pulsing Text')
-                  .animate(
-                    onPlay: (controller) => controller.repeat(reverse: true),
-                  )
-                  .fadeOut(curve: Curves.easeInOut),
+              const Text('Horrible Pulsing Text').animate(
+                onPlay: (controller) => controller.repeat(reverse: true),
+              ),
             ],
           ),
         ),
